@@ -1,0 +1,18 @@
+Thành phần css thường dùng
+- margin: (top  right  bottom  left)
+- padding: (top  right  bottom  left)
+- left, top, right, bottom
+- width:
+- height:
+- display: flex / block / inline-block /.... 
+- position: relative / absolute
+- z-index: 0-> n (integer)
+- opacity: 0-1
+-------------
+- border:
+- background
+- color
+------------
+- font: 
+------------
+

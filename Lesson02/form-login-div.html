@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin:0;
+            padding:0
+        }
+        div.login{
+            margin:0;
+            background-color: #ccc;
+            height: 100vh;
+        }
+        form{
+            margin:1rem auto;
+            width: 400px;
+            background-color: #fff;
+            border-radius: .5rem;
+
+        }
+        form > div {
+            display:flex;
+            padding:.25rem 1rem;
+        }
+        form > div:first-child{
+            justify-content: center;
+        }
+        .form-group > label{
+            display: inline-block;
+            width:20% ;
+        }
+        .input-group span.err{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form action="">
+            <div>
+                <img src="https://devmaster.edu.vn/images/logo.png" alt="Devmaster">
+            </div>
+            <div class="form-group">
+                <label for="taiKhoan">Tài khoản</label>
+                <div class="input-group">
+                    <input type="text" name="taiKhoan" id="taiKhoan" placeholder="Nhập tài khoản">
+                    <span id="errTaiKhoan" class="err">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="matKhau">Mật khẩu</label>
+                <div class="input-group">
+                    <input type="password" name="matKhau" id="matKhau" placeholder="Nhập mật khẩu">
+                    <span id="errMatKhau" class="err">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div class="input-group">
+                    <input type="checkbox" name="chkGhiNho" id="chkGhiNho">
+                    <label for="chkGhiNho">Ghi nhớ</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div class="button-group">
+                    <input type="submit" value="Đăng nhập">
+                    <input type="reset" value="Làm lại">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

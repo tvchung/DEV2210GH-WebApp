@@ -1,0 +1,80 @@
+/* Bộ chọn tất cả các phần tử  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Bộ chọn phần tử (tag) */
+html, body{
+    font-size: 16px;
+}
+header{
+    background-color: aquamarine;
+    padding: 1rem 2rem;
+}
+/* bộ chọn id  */
+#navBar{
+    background-color: #0082c8;
+}
+/* bộ chọn thuộc tính class  */
+.item {
+    border: 1px solid #999;
+    margin: .25rem;
+    padding: .5rem;
+    border-radius: .25rem;
+}
+.col {
+    width: 33.333333%;
+}
+.row{
+    display: flex;
+}
+.container {
+    margin: 1rem 10%;
+}
+ 
+/* bộ chọn tag01 tag02  */
+#zone1 .item {
+    background-color: bisque;
+}
+
+/* bộ chọn tag01 > tag02  */
+#zone1 > .item{
+    font-size: 20px;
+    color: blue;
+}
+/* bộ chọn tag01, tag02 */
+#zone1, #zone2{
+    background-color: green;
+}
+/* bộ chọn tag01 + tag02  */
+#zone2 .item + p {
+    font-size: 30px;
+}
+/* bộ chọn tag01 ~ tag02  */
+#zone2 .item ~ p {
+    /* font-size: 30px; */
+    color: yellow;
+}
+/* bộ chọn ngữ cảnh  */
+/* :hover 
+:first-child
+::first-letter
+::after
+::before */
+
+.item:hover{
+    font-size: 30px;
+}
+
+#zone2  p::first-letter{
+    font-size: 50px;
+    color: red;
+}
+
+#zone2 p:nth-child(2n){
+    background-color: yellowgreen;
+}
+
+#zone2 p:nth-child(2n+1){
+    background-color: rgb(63, 50, 205);
+}

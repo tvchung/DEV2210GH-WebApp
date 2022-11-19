@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị hình ảnh, và liên kết</title>
+</head>
+<body>
+    <h1>Hiển thị hình ảnh, và liên kết</h1>
+    <hr>
+    <pre>
+        Cú pháp: 
+         img src="url" />
+        url: đường dẫn tới file ảnh tài nguyên => 
+            => có 2 loại đường dẫn cơ bản 
+        
+        + Đường dẫn tuyệt đối:
+            [giao thức]://domain/path-file
+            VD:
+            https://devmaster.edu.vn/images/logo.png
+        + Đường dẫn tương đối:
+            ++ vào trong một thư mục folder/file 
+            ++ ra ngoài 1 thư mục: ../ 
+    </pre>
+    <h3> + Đường dẫn tuyệt đối:</h3>
+    <img src="https://devmaster.edu.vn/images/logo.png" 
+         alt="Devmaster Academy">
+    <h3>+ Đường dẫn tương đối:</h3>
+    <p>Trong cùng thư mục</p>
+    <img src="logo.png" alt="Devmaster Academy">
+    <p>Ảnh lấy bên trong một thư mục (images)</p>
+    <img src="images/php.jpg" alt="PHP">
+    <p>Ảnh lấy từ bên ngoài 1 thư mục</p>
+    <img src="../fe-reactjs.png" alt="fe-reactjs">
+</body>
+</html>

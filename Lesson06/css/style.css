@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;  /* mặc định của các trình duyệt */
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 10%;
+}
+
+#navTop{
+    background-color: #f5f5f5;
+}
+#navTop ul {
+    display: flex;
+    justify-content: flex-end;
+}
+#navTop a{
+    display: block;
+    padding: .5rem .75rem;
+    color: #7a7a7a;
+    border-right: 1px solid #d8d8d8;
+}
+#navTop li:first-child i{
+    color:#ff3f00;
+}
+#navTop li:first-child span:last-child{
+    color:#000;
+    font-weight: bold;
+}
+#navTop a:hover{
+    color:#000;
+}

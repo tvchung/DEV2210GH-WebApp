@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng đơn giản</title>
+</head>
+<body>
+    <h1>Cấu trúc table trong HTML5</h1>
+    <pre>
+        cấu trúc table:
+        *) table: 
+            - với các thuộc tinh thường dùng (id, name, border, width, cellpadding, cellspcing,...) 
+            - tổ chức thành 3 phần
+        *) Phần tiêu đề bảng 
+            thead: 
+                tr -> tạo hàng 
+                    th-> tạo cột 
+        *) Phần nội dung 
+            tbody:
+                tr -> tạo hàng
+                    td -> tạo cột nội dung 
+        *) Phần cuối bảng: 
+            tfoot:
+                tr-> tạo hàng 
+                    th, td -> tạo cột 
+        
+    </pre>
+    <hr>
+    <table width="100%" border="1px">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Chung</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Trịnh</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>....</th>
+                <th>....</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

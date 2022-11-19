@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp tương tác của css </title>
+    <style>
+        /* Css tương tác với tên thẻ HTML */
+        h1{
+            background-color: aqua;
+        }
+        /* Css tương tác với thuộc tính id của thẻ HTML */
+        #zone2{
+            border: 1px solid red;
+            padding: 1rem;
+            margin: 1rem 2rem;
+        }
+        /* Css tương tác với tên class của thẻ html */
+        .content{
+            color: blue;
+        }
+        /* Css tương tác với giá trị của  thuộc tính */
+        input[type="text"]{
+            border: 1px solid #000;
+            padding: .25rem .5rem;
+            margin: .5rem 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section id="zone1">
+        <h1>Cú pháp tương tác của css</h1>
+        <pre>
+            Css tương tác với tên thẻ HTML
+            Css tương tác với thuộc tính id của thẻ HTML
+            Css tương tác với tên class của thẻ html
+            Css tương tác với giá trị của  thuộc tính
+        </pre>
+    </section>
+    <section id="zone2">
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas adipisci exercitationem eum, ratione ullam deserunt soluta consectetur iste dolore error atque doloremque? Sed dolor expedita provident officia officiis debitis voluptate?</p>
+        </div>
+    </section>
+    <section id="zone3">
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas adipisci exercitationem eum, ratione ullam deserunt soluta consectetur iste dolore error atque doloremque? Sed dolor expedita provident officia officiis debitis voluptate?</p>
+        </div>
+    </section>
+    <section id="zone4">
+        <form action="">
+            <input type="text" name="" id="">
+            <br>
+            <input type="text" name="" id="">
+            <br>
+            <input type="submit" name="" id="Haha">
+        </form>
+    </section>
+</body>
+</html>
