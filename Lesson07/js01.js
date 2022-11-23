@@ -1,0 +1,1 @@
+document.write("<h2> Nội dung được viết từ file ngoài </h2>");

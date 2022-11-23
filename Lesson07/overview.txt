@@ -1,0 +1,73 @@
+Ngôn ngữ lập trình javascript
+===============================
+Giới thiệu cách sử dụng javascript
+Khai báo biến trong javascript
+Tìm hiểu hàm alert(), confirm() , prompt()
+Các toán tử trong javascript
+Lệnh rẽ nhánh trong javascript
+Vòng lặp trong javascript
+Mảng trong javascript
+Hàm trong javascript
+Chuỗi trong javascript
+===============================
+1. cú pháp ngôn ngữ 
+    client => script
+2. Các khái niệm cơ bản của ngôn ngữ lập trình (js)
+    Biến (let, var)
+    Hằng (const)
+    Toán tử 
+    Toán hạng
+    Biểu thức
+    Câu lệnh 
+    Khối lệnh 
+3. Một số hàm alert ; confirm ; prompt (I/O)
+4. Các cấu trúc điểu khiển (3 loại cấu trúc)
+    4.1: Lựa chọn / rẽ nhánh 
+        a) if (4 dạng if )
+            *) Dạng 1: if đơn 
+
+            *) Dạng 2: if ...else (if đầy đủ)
+
+            *) Dạng 3: if bậc thang - if ... else if ....
+
+            *) Dạng 4: if lồng nhau
+
+        b) switch ... case 
+
+    4.2: cấu trúc lặp (loop)
+        a) for (4 dạng khác nhau)
+            *) Dạng 1: for đầy đủ 
+                for(initial ; expression_condition ; step ){
+                    statement block;
+                }
+            *) Dạng 2: for khuyết
+                for( ; expression_condition ; step ){
+                    statement block;
+                }
+                for( initial;  ; step ){
+                    statement block;
+                }
+                for(initial ; expression_condition ;  ){
+                    statement block;
+                }
+            *) Dạng 3: for khuyết toàn bộ 
+                for( ; ; ){
+                    statement block;
+                }
+        b) while 
+
+        c) do... while 
+
+        d) foreach 
+    4.3: Lệnh nhảy
+        break;
+        continue;
+        return;
+        exit;
+5. Mảng
+    Mảng 1 chiều 
+    Mảng nhiều chiều
+6. Hàm 
+    Normal function
+    Arrow function 
+7. Xử lý với chuỗi (Đỗi tượng chuỗi)
