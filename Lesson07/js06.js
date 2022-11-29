@@ -69,4 +69,9 @@ switch(thu){
         25 -> hai mươi lăm
 
         99 -> chín mươi chín
+
+
+        25 -> 
+           dv=  25 % 10 = 5
+           hc= 25/10 =5
 */
