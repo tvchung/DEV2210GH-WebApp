@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lý sự kiện với DOM</title>
+</head>
+<body>
+    <h1>Xử lý sự kiện với DOM</h1>
+    <div id="zone">
+        <Label for="nhap">Nhập dữ liệu:</Label>
+        <input type="text" name="nhap" id="nhap" 
+            placeholder="Nhập dữ liệu" 
+            onchange="changeInput()"
+            onkeyup="keyUpInput(this.value);" 
+            onkeydown="keyDownInput(this.value);"
+            onmouseover="mouseOver(this);">
+        <div id="noi-dung">Zone1:</div>
+        <div id="noi-dung-2"></div>
+    </div>
+
+    <script>
+        // sự kiện onChange
+        var changeInput = ()=>{
+            let element = document.getElementById("nhap");
+            document.getElementById("noi-dung").innerText = "Zone1: " + element.value;
+        }
+        var keyUpInput = (val)=>{
+            document.getElementById("noi-dung-2").innerHTML="<h2>" + val + "</h2>";
+        }
+        var keyDownInput =(val)=>{
+            if(val>=0 && val<=999999999){
+                document.getElementById("noi-dung-2").innerHTML="<h2>" + val + "</h2>";
+            }else{
+                alert('bạn nhập sai');
+            }
+        }
+
+        var mouseOver =(element)=>{
+            element.style.backgroundColor='#ccc';
+            element.style.padding="10px";
+        }
+    </script>
+</body>
+</html>

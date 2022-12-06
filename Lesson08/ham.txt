@@ -1,0 +1,3 @@
+hàm trong js
+- hàm có đối số, hoặc không 
+- hàm có giá trị trả về xác định (return) hoặc giá trị vô hướng

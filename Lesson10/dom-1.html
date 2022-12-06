@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in HTML</title>
+</head>
+<body>
+    <h1>Tương tác DOM trong javascript </h1>
+    <hr/>
+    <pre>
+        - tương tác thông qua thuộc tính  id  (getElementById)
+        - tương tác thông qua phần tử html (getElementsByTagName)
+        - tương tác thông qua thuộc tính class (getElementsByClassName)
+        - tương tác thông css selector (querySelectAll)
+    </pre>
+
+    <div id="zone1">
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam rerum minima eos est, velit aut sapiente dolores officiis omnis. Repellendus pariatur mollitia a rerum porro commodi exercitationem illo unde.</p>
+        <p>
+            Nội dung alsjdfa alsdf
+        </p>
+    </div>
+    <div id="zone2">
+        <p>Đoạn 1 trong zone2</p>
+        <p>Đoạn 2 trong zone2</p>
+    </div>
+    <button onclick="clickId();">Click here ID</button>
+    <button onclick="clickTag();">Click Tag</button>
+    <button onclick="clickClass();">Click Class</button>
+    <button onclick="clickCssSelector();">Click Css Selector</button>
+    <script>
+        var clickId = ()=>{
+            //  - tương tác thông qua thuộc tính  id  (getElementById)
+            document.getElementById("zone1").style.color='red';
+        }
+
+        // tương tác thông qua tên thẻ
+        var clickTag = ()=>{
+            let element = document.getElementsByTagName('h1');
+            element[0].style.backgroundColor = 'green';
+        }
+        // Tương tác thông qua thuộc tính class
+        var clickClass = ()=>{
+            let element = document.getElementsByClassName('content');
+            element[0].style.fontFamily ="Tahoma";
+            element[0].style.fontSize="30px";
+        }
+        // css selector
+        var clickCssSelector = ()=>{
+            let element = document.querySelectorAll("div#zone1 p");
+            // element[0].style.color='blue';
+            // element[1].style.color='blue';
+            
+            element.forEach((x)=>{
+                console.log(x);
+                x.style.color = 'Blue';
+            });
+        }
+    </script>
+</body>
+</html>

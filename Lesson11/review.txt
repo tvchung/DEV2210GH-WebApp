@@ -1,0 +1,15 @@
+- DOM: (tương tác)
+    document.getElementById  -> id
+    document.getElementsByTagName -> thẻ html
+    document.getElementsByClassName -> class
+    document.querySelectorAll  -> css selector 
+- Events: 
+    onclick
+    onmouseover / onmouseout / ...
+    onchange
+    onkeyup
+    onkeydown
+    onkeypress
+    onfocus
+    onsubmit
+    ...

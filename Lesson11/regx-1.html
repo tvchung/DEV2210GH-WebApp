@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <div>
+        <Label>Input:</Label>
+        <input type="text" name="txt1" id="txt1">
+        <input type="button" value="Check" onclick="check1();"/>
+        <span></span>
+    </div>
+    <div>
+        <Label>Input:</Label>
+        <input type="text"  id="txt2">
+        <input type="button" value="Check" onclick="check2();"/>
+        <span></span>
+    </div>
+    <div>
+        <Label>Email: (quy tắc đơn giản) abc@gmail.com / ads@adlk.vn / a56ds@adl5k.info</Label>
+        <input type="text"  id="txt3">
+        <input type="button" value="Check" onclick="check3();"/>
+        <span></span>
+    </div>
+    <div>
+        <Label>Email: (quy tắc đơn giản) 
+            abc@gmail.com / ads@adlk.vn / a5.6_ds@adl5k.info</Label>
+        <input type="text"  id="txt4">
+        <input type="button" value="Check" onclick="check4();"/>
+        <span></span>
+    </div>
+    <div>
+        <Label>Email:  
+            abc@gmail.com / ads@adlk.vn 
+            / a5.6_ds@adl5k.info
+            / abcs.alsdjf_sdf@gmail.com.vn </Label>
+        <input type="text"  id="txt5">
+        <input type="button" value="Check" onclick="check5();"/>
+        <span></span>
+    </div>
+    <script>
+        const check1 =()=>{
+            let txt = document.getElementById("txt1").value;
+            let regx = /[abc]/;
+            if(regx.test(txt)==true){
+                document.querySelectorAll("div span")[0].innerHTML="Có chứa";
+            }else{
+                document.querySelectorAll("div span")[0].innerHTML="Không chứa";
+            }
+        }
+        const check2 =()=>{
+            let txt = document.getElementById("txt2").value;
+            let regx = /^[a-d]+$/;
+            if(regx.test(txt)==true){
+                document.querySelectorAll("div span")[1].innerHTML="Có chứa";
+            }else{
+                document.querySelectorAll("div span")[1].innerHTML="Không chứa";
+            }
+        }
+        const check3 =()=>{
+            let txt = document.getElementById("txt3").value;
+            let regx = /^[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}$/;
+            if(regx.test(txt)==true){
+                document.querySelectorAll("div span")[2].innerHTML="Đúng quy tắc";
+            }else{
+                document.querySelectorAll("div span")[2].innerHTML="Sai quy tăc";
+            }
+        }
+        const check4 =()=>{
+            let txt = document.getElementById("txt4").value;
+            let regx = /^[a-zA-Z0-9]+[a-zA-Z0-9._]*[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.][a-zA-Z]{2,4}$/;
+            if(regx.test(txt)==true){
+                document.querySelectorAll("div span")[3].innerHTML="Đúng quy tắc";
+            }else{
+                document.querySelectorAll("div span")[3].innerHTML="Sai quy tăc";
+            }
+        }
+    </script>
+</body>
+</html>
